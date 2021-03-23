@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./Assets/Bilder/bulletinBoardBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.faq-container{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.faq-notes{
+    position: relative;
+    padding-top: 4rem;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px #00000059, inset -3px -3px 4px #00000025, inset 1px 1px 3px #00000025;
+    line-height: 1rem;
+    background-color: #fffcf8;
+    transition: ease-in-out 500ms;
+}
+
+.faq-notes:nth-child(1):hover, 
+.faq-notes:nth-child(2):hover,
+.faq-notes:nth-child(3):hover,
+.faq-notes:nth-child(4):hover
+{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.faq-notes:nth-child(1){
+    width: 25rem;
+    height: 20rem;
+    transform: rotate(-2deg);
+    background-color: #c0eaec;
+  }
+
+.faq-notes:nth-child(2){
+    width: 35rem;
+    height: 19rem;
+    transform: rotate(1deg);
+    color: #467174;
+  }
+
+.faq-notes:nth-child(3){
+    width: 35rem;
+    height: 19rem;
+    color: #f57be1;
+  }
+
+.faq-notes:nth-child(4){
+    width: 29rem;
+    height: 23rem;
+    transform: rotate(2deg);
+    background-color: #ddffb6;
+  }
+
+  .pin-img{
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
+
+.question{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+li{
+    margin-top: 1rem;
+}
+
+ul{
+    padding: 0 2rem 0 4rem;
+}
+
+button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #868686;
+}
+
+.fa-heart{
+    font-size: 1.3rem;
+}
+
+.liked-heart{
+    color: #d66594;
+}
+
+.like-text{
+    position: absolute;
+    top: 19px;
+    right: 40px;
+    animation-name: slideInUp;
+    animation-duration: 1.5s;
+    color: rgb(39, 39, 39);
+}
+
+@keyframes slideInUp {
+    0% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
